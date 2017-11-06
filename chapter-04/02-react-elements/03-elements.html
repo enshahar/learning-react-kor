@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>React Elements</title>
+    <title>리액트 엘리먼트</title>
 </head>
 <body>
 
@@ -16,25 +16,26 @@
 <script>
 
     const dish = React.createElement("section", {id: "baked-salmon"},
-        React.createElement("h1", null, "Baked Salmon"),
-        React.createElement("ul", {"className": "ingredients"},
-            React.createElement("li", null, "1 lb Salmon"),
-            React.createElement("li", null, "1 cup Pine Nuts"),
-            React.createElement("li", null, "2 cups Butter Lettuce"),
-            React.createElement("li", null, "1 Yellow Squash"),
-            React.createElement("li", null, "1/2 cup Olive Oil"),
-            React.createElement("li", null, "3 cloves of Garlic")
-        ),
-        React.createElement("section", {"className": "instructions"},
-            React.createElement("h2", null, "Cooking Instructions"),
-            React.createElement("p", null, "Preheat the oven to 350 degrees."),
-            React.createElement("p", null, "Spread the olive oil around a glass baking dish."),
-            React.createElement("p", null, "Add the salmon, Garlic, and pine..."),
-            React.createElement("p", null, "Bake for 15 minutes."),
-            React.createElement("p", null, "Add the Butternut Squash and put..."),
-            React.createElement("p", null, "Remove from oven and let cool for 15 ....")
-        )
-    )
+                   React.createElement("h1", null, "구운 연어"),
+                   React.createElement("ul",  {"className": "ingredients"},
+                     React.createElement("li", null, "연어 500그램"),
+                     React.createElement("li", null, "잣 1 컵"),
+                     React.createElement("li", null, "버터 상추 2 컵"),
+                     React.createElement("li", null, "옐로 스쿼시(Yellow Squash, 호박의 한 종류) 1개"),
+                     React.createElement("li", null, "올리브 오일 1/2 컵"),
+                     React.createElement("li", null, "마늘 3 쪽")
+                   ),
+                   React.createElement("section", {"className": "instructions"},
+                     React.createElement("h2", null, "조리절차"),
+                     React.createElement("p", null, "오븐을 350도로 예열한다."),
+                     React.createElement("p", null,
+                       "유리 베이킹 그릇에 올리브 오일을 두른다."),
+                     React.createElement("p", null, "연어, 마늘, 잣을 그릇에 담는다."),
+                     React.createElement("p", null, "오븐에서 15분간 익힌다."),
+                     React.createElement("p", null, "옐로 스쿼시를 추가하고 다시 30분간 오븐에서 익힌다."),
+                     React.createElement("p", null, "오븐에서 그릇을 꺼내서 15분간 식힌다음에 상추를 곁들여서 내놓는다.")
+                   )
+                 )
 
     ReactDOM.render(dish, document.getElementById('react-container'))
 
