@@ -18,7 +18,7 @@ describe("Action Creators", () => {
             },
             {
                 id: "f9005b4e-975e-433d-a646-79df172e1dbb",
-                title: "ocean blue",
+                title: "바닷빛 파랑",
                 color: "#0061ff",
                 timestamp: "Mon Apr 11 2016 12:54:31 GMT-0700 (PDT)",
                 rating: 2
@@ -58,7 +58,7 @@ describe("Action Creators", () => {
         let colors = [
             {
                 id: '8658c1d0-9eda-4a90-95e1-8001e8eb6036',
-                title: "Rad Red",
+                title: "과격한 빨강",
                 color: "#FF0000",
                 rating: 3,
                 timestamp: "Sat Mar 12 2016 16:12:09 GMT-0800 (PST)"
@@ -79,7 +79,7 @@ describe("Action Creators", () => {
         const colors = [
             {
                 id: '8658c1d0-9eda-4a90-95e1-8001e8eb6036',
-                title: "Rad Red",
+                title: "과격한 빨강",
                 color: "#FF0000",
                 rating: 3,
                 timestamp: "Sat Mar 12 2016 16:12:09 GMT-0800 (PST)"

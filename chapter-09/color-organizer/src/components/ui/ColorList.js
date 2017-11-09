@@ -5,7 +5,7 @@ import '../../../stylesheets/ColorList.scss'
 const ColorList = ({ colors=[], onRate=f=>f, onRemove=f=>f }) =>
     <div className="color-list">
         {(colors.length === 0) ?
-            <p>No Colors Listed. (Add a Color)</p> :
+            <p>색이 없습니다. (색을 추가해 주세요)</p> :
             colors.map(color =>
                 <Color key={color.id}
                     {...color}

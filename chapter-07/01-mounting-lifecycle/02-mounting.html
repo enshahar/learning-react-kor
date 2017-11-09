@@ -6,7 +6,7 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-    <title>Mounting Lifecycle</title>
+    <title>마운팅 생애주기</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -67,14 +67,14 @@
           return (
               <div className="member-list">
                   {(loading) ?
-                      <span>Loading Members</span> :
+                      <span>멤버 로딩중</span> :
                       (members.length) ?
                           members.map((user, i) =>
                               <Member key={i} {...user} />
                           ) :
-                          <span>0 members loaded...</span>
+                          <span>0 멤버 로딩됨...</span>
                   }
-                  {(error) ? <p>Error Loading Members: error</p> : ""}
+                  {(error) ? <p>멤버 로딩 오류: {error}</p> : ""}
         </div>
       )
     }

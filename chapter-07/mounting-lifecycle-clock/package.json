@@ -1,12 +1,12 @@
 {
-  "name": "mountin-lifecycle-clock",
+  "name": "mounting-lifecycle-clock",
   "version": "1.0.0",
   "description": "A sample React application",
   "main": "index.js",
   "scripts": {
     "build": "webpack --progress",
     "prestart": "npm run build",
-    "start": "opener dist/index.html"
+    "start": "opener http://localhost:3000 & httpster -p 3000 -d ./dist"
   },
   "keywords": [
     "React",
@@ -28,6 +28,7 @@
     "webpack": "3.6.0"
   },
   "dependencies": {
+    "httpster": "1.0.3",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "prop-types": "15.6.0"

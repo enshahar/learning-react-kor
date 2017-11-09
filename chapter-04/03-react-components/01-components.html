@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>React Components</title>
+    <title>리액트 콤포넌트</title>
 </head>
 <body>
 
@@ -17,13 +17,13 @@
 
     class IngredientsList extends React.Component {
       render() {
-        return React.createElement("ul", {"className": "ingredients"},
-            React.createElement("li", null, "1 lb Salmon"),
-            React.createElement("li", null, "1 cup Pine Nuts"),
-            React.createElement("li", null, "2 cups Butter Lettuce"),
-            React.createElement("li", null, "1 Yellow Squash"),
-            React.createElement("li", null, "1/2 cup Olive Oil"),
-            React.createElement("li", null, "3 cloves of Garlic")
+        return React.createElement("ul",  {"className": "ingredients"},
+          React.createElement("li", null, "연어 500그램"),
+          React.createElement("li", null, "잣 1 컵"),
+          React.createElement("li", null, "버터 상추 2 컵"),
+          React.createElement("li", null, "옐로 스쿼시(Yellow Squash, 호박의 한 종류) 1개"),
+          React.createElement("li", null, "올리브 오일 1/2 컵"),
+          React.createElement("li", null, "마늘 3 쪽")
         )
       }
     }
@@ -31,8 +31,8 @@
     const list = React.createElement(IngredientsList, null, null)
 
     ReactDOM.render(
-        list,
-        document.getElementById('react-container')
+      list,
+      document.getElementById('react-container')
     )
 
 </script>

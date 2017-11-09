@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <script src="https://unpkg.com/redux@3.7.2/dist/redux.min.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-    <title>Redux</title>
+    <title>스토어</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -71,13 +71,13 @@
 
 
     store.subscribe(() =>
-      console.log('next state', store.getState())
+      console.log('다음 상태', store.getState())
     )
 
     store.dispatch({
       type: "ADD_COLOR",
       id: 1,
-      title: "Party Pink",
+      title: "파티 핑크",
       color: "#F142FF",
       timestamp: "Thu Mar 10 2016 01:11:12 GMT-0800 (PST)"
     })
@@ -85,7 +85,7 @@
     store.dispatch({
       type: "ADD_COLOR",
       id: 2,
-      title: "Big Blue",
+      title: "큰 파랑",
       color: "#0000FF",
       timestamp: "Thu Mar 10 2016 01:11:12 GMT-0800 (PST)"
     })

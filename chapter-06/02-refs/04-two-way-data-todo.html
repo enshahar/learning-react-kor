@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>02 - Color Component with refs</title>
+    <title>04 - 양방향 데이터 바인딩과 todo</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -34,10 +34,10 @@
               <form onSubmit={this.submit}>
                   <input ref="_title"
                          type="text"
-                         placeholder="color title..." required/>
+                         placeholder="색 이름..." required/>
                   <input ref="_color"
                          type="color" required/>
-                  <button>ADD</button>
+                  <button>추가</button>
               </form>
           )
       }
@@ -46,8 +46,8 @@
     render(
       <AddColorForm onNewColor={
           (title, color) => {
-              console.log(`TODO: add ${title} and ${color} to the list`)
-              console.log(`TODO: render UI with new Color`)
+              console.log(`TODO:새로운 색 정보 ${title} 과 ${color} 를 리스트에 넣는다`)
+              console.log(`TODO: 새로운 색을 가지고 UI를 표시한다`)
           }}
       />,
       document.getElementById('react-container')

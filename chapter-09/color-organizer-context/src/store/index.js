@@ -4,11 +4,11 @@ import stateData from '../../data/initialState'
 
 const logger = store => next => action => {
     let result
-    console.groupCollapsed("dispatching", action.type)
-    console.log('prev state', store.getState())
-    console.log('action', action)
+    console.groupCollapsed('디스패칭', action.type)
+    console.log('이전 상태', store.getState())
+    console.log('액션', action)
     result = next(action)
-    console.log('next state', store.getState())
+    console.log('다음상태', store.getState())
     console.groupEnd()
     return result
 }

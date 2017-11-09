@@ -6,7 +6,7 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-    <title>Children</title>
+    <title>React.Children</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -35,10 +35,10 @@
       render(
           <Display ifTruthy={age >= 21}>
               <WhenTruthy>
-                 <h1>You can Enter</h1>
+                 <h1>들어 오세요.</h1>
               </WhenTruthy>
               <WhenFalsy>
-                 <h1>Beat it Kid</h1>
+                 <h1>애들은 가!</h1>
               </WhenFalsy>
           </Display>,
           document.getElementById('react-container')

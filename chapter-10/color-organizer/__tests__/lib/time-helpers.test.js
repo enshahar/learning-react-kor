@@ -7,10 +7,10 @@ describe("Time Helpers", () => {
 
     describe("ago", () => {
 
-        it("less than a minute", () => {
+        it('1분 이내', () => {
             const now = 'Thu Mar 17 2016 18:43:08 GMT-0700 (PDT)'
             const timestamp = 'Thu Mar 17 2016 18:42:50 GMT-0700 (PDT)'
-            certify(timestamp, now).toEqual("less than a minute")
+            certify(timestamp, now).toEqual('1분 이내')
         })
 
         it("5 minutes", () => {

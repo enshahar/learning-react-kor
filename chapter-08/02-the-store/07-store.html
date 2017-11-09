@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <script src="https://unpkg.com/redux@3.7.2/dist/redux.min.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-    <title>Redux</title>
+    <title>스토어</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -72,18 +72,18 @@
     )
 
     store.subscribe(() => {
-    localStorage['redux-store'] = JSON.stringify(store.getState())
+      localStorage['redux-store'] = JSON.stringify(store.getState())
     })
 
-    console.log('current color count', store.getState().colors.length)
-    console.log('current state', store.getState())
+    console.log('현재 색 개수', store.getState().colors.length)
+    console.log('현재 상태', store.getState())
 
     let uniqueId = 0
 
     store.dispatch({
       type: "ADD_COLOR",
       id: uniqueId++,
-      title: "Party Pink",
+      title: "파티 핑크",
       color: "#F142FF",
       timestamp: new Date().toString()
     })

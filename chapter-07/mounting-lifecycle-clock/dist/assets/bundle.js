@@ -8215,7 +8215,7 @@ var possibleStandardNames$1 = {
   acceptcharset: 'acceptCharset',
   'accept-charset': 'acceptCharset',
   accesskey: 'accessKey',
-  action: 'action',
+  action: '액션',
   allowfullscreen: 'allowFullScreen',
   allowtransparency: 'allowTransparency',
   alt: 'alt',
@@ -21218,7 +21218,7 @@ var Clock = function (_Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
-            console.log("Starting Clock");
+            console.log("시계 시작중");
             this.ticking = setInterval(function () {
                 return _this2.setState((0, _lib.getClockTime)());
             }, 1000);
@@ -21227,7 +21227,7 @@ var Clock = function (_Component) {
         key: 'componentWillUnmount',
         value: function componentWillUnmount() {
             clearInterval(this.ticking);
-            console.log("Stopping Clock");
+            console.log("시계 중단중");
         }
     }, {
         key: 'render',

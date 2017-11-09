@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>03 - createClass with PropTypes success</title>
+    <title>03 - createClass과 PropTypes을 사용해 검증에 성공하는 경우</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -31,9 +31,9 @@
               <div className="summary">
                 <h1>{title}</h1>
                 <p>
-                  <span>{ingredients.length} Ingredients | </span>
-                  <span>{steps.length} Steps</span>
-                </p>
+                  <span>재료: {ingredients.length} 종류 | </span>
+                  <span>총 {steps.length} 단계</span>
+               </p>
               </div>
             )
         }
@@ -41,21 +41,21 @@
     }
 
     const ingredients = [
-        "Peanut Butter",
-        "Jelly",
-        "Bread"
+        "땅콩 버터",
+        "젤리",
+        "식빵"
     ]
 
     const steps = [
-        "Spread Peanut Butter on one slice of Bread",
-        "Spread Jelly on other slice of Bread",
-        "Put the bread together",
-        "Set out for 5 minutes to cool",
-        "Plate the dish on a paper towel"
+        "구운 빵의 한쪽 면에 땅콩 버터를 넓게 바른다",
+        "다른 구운 빵의 한쪽 면에 젤리를 넓게 바른다",
+        "두 빵을 하나로 합친다",
+        "5분동안 식힌다",
+        "접시 위에 종이 타월을 얹고 그 위에 샌드위치를 놓는다"
     ]
 
     render(
-        <Summary title="Peanut Butter and Jelly"
+        <Summary title="땅콩 버터와 젤리"
                ingredients={ingredients}
                steps={steps} />,
         document.getElementById('react-container')

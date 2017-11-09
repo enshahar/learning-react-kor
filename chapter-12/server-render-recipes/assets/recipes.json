@@ -24,7 +24,7 @@
             { "name": "Whitefish", "amount": 1, "measurement": "l lb" },
             { "name": "cheese", "amount": 1, "measurement": "cup" },
             { "name": "Iceberg Lettuce", "amount": 2, "measurement": "cups" },
-            { "name": "Tomatoes", "amount": 2, "measurement": "large"},
+            { "name": "토마토es", "amount": 2, "measurement": "large"},
             { "name": "Tortillas", "amount": 3, "measurement": "med" }
         ],
         "steps": [

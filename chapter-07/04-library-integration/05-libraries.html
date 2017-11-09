@@ -7,7 +7,7 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-    <title>라이브러리</title>
+    <title>한글판 그림 7-6 예제</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -55,39 +55,54 @@
       }
     ]
 
-    const Canvas = ({children}) =>
-        <svg height="500" width="800">
-          {children}
-        </svg>
-
-    const TimelineDot = ({position, txt}) =>
-        <g transform={`translate(${position},0)`}>
-          <circle cy={160} r={5} style={{fill: 'blue'}} />
-          <text y={115} x={-95} transform="rotate(-45)" style={{fontSize: '9px'}}>{txt}</text>
-        </g>
-
     class Timeline extends Component {
 
       constructor({data=[]}) {
-          const times = d3.extent(data.map(d => d.year))
-          const range = [50, 750]
-          super({data})
-          this.scale = d3.time.scale().domain(times).range(range)
-          this.state = {data, times, range}
+        const times = d3.extent(data.map(d => d.year))
+        const range = [10, 500]
+        super({data})
+        this.state = {data, times, range}
       }
-
+      
+      componentDidMount() {
+        let group
+        const { data, times, range } = this.state
+        const { target } = this.refs
+        const scale = d3.time.scale().domain(times).range(range)
+        
+        d3.select(target)
+          .append('svg')
+          .attr('height', 230)
+          .attr('width', 700)
+          
+        group = d3.select(target.children[0])
+                  .selectAll('g')
+                  .data(data)
+                  .enter()
+                  .append('g')
+                  .attr(
+                    'transform',
+                    (d, i) => 'translate(' + scale(d.year) + ', 0)'
+                  )
+                  
+        group.append('circle')
+             .attr('cy', 190)
+             .attr('r', 5)
+             .style('fill', 'blue')
+             
+        group.append('text')
+             .text(d => d.year + ' - ' + d.event)
+             .style('font-size', '9px')
+             .attr('y', 130)
+			 .attr('x', -130)
+             .attr('transform', 'rotate(-45)')
+      }
       render() {
-          const { data } = this.state
-          const { scale } = this
           return (
-              <div className="timeline">
-                  <h1>{this.props.name} 타임라인</h1>
-                  <Canvas>
-                      {data.map((d, i) =>
-                          <TimelineDot position={scale(d.year)} txt={`${d.year} - ${d.event}`}/>
-                      )}
-                  </Canvas>
-              </div>
+            <div className="timeline">
+              <h1>{this.props.name} 타임라인</h1>
+              <div ref="target"></div>
+            </div>
           )
       }
 

@@ -6,7 +6,7 @@
     <script src="https://unpkg.com/redux@3.7.2/dist/redux.min.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
     <script src="https://unpkg.com/node-uuid@1.4.7/uuid.js"></script>
-    <title>Redux</title>
+    <title>미들웨어</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -109,11 +109,11 @@
 
       const logger = store => next => action => {
           let result
-          console.groupCollapsed("dispatching", action.type)
-          console.log('prev state', store.getState())
-          console.log('action', action)
+          console.groupCollapsed('디스패칭', action.type)
+          console.log('이전 상태', store.getState())
+          console.log('액션', action)
           result = next(action)
-          console.log('next state', store.getState())
+          console.log('다음 상태', store.getState())
           console.groupEnd()
           return result
       }
@@ -134,11 +134,11 @@
 
 
       const populate = compose(
-        () => console.log('color coung', store.getState().colors.length),
-        () => store.dispatch(addColor("Big Blue", "#0000FF")),
-        () => store.dispatch(addColor("Tomato", "#990000")),
-        () => store.dispatch(addColor("lawn", "#009900")),
-        () => store.dispatch(addColor("Party Pink", "#F142FF"))
+        () => console.log('색 개수', store.getState().colors.length),
+        () => store.dispatch(addColor("큰 파랑", "#0000FF")),
+        () => store.dispatch(addColor("토마토", "#990000")),
+        () => store.dispatch(addColor("잔디", "#009900")),
+        () => store.dispatch(addColor("파티 핑크", "#F142FF"))
       )
 
 

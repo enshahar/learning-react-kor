@@ -23,7 +23,7 @@ global._testColors = deepFreeze([
     },
     {
         id: "f9005b4e-975e-433d-a646-79df172e1dbb",
-        title: "ocean blue",
+        title: "바닷빛 파랑",
         color: "#0061ff",
         timestamp: "Mon Apr 11 2016 12:54:31 GMT-0700 (PDT)",
         rating: 2

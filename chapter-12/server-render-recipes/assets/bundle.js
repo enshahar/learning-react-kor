@@ -8215,7 +8215,7 @@ var possibleStandardNames$1 = {
   acceptcharset: 'acceptCharset',
   'accept-charset': 'acceptCharset',
   accesskey: 'accessKey',
-  action: 'action',
+  action: '액션',
   allowfullscreen: 'allowFullScreen',
   allowtransparency: 'allowTransparency',
   alt: 'alt',

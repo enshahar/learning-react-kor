@@ -4,7 +4,7 @@ import '../../stylesheets/Menu.css'
 const Menu = ({ recipes }) =>
     <article>
         <header>
-            <h1>Delicious Recipes</h1>
+            <h1>맛있는 조리법</h1>
         </header>
         <div className="recipes">
             { recipes.map((recipe, i) =>

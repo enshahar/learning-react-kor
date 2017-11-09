@@ -8,7 +8,7 @@ const StarRating = ({starsSelected=0, totalStars=5, onRate=f=>f}) =>
                   selected={i<starsSelected}
                   onClick={() => onRate(i+1)}/>
         )}
-        <p>{starsSelected} of {totalStars} stars</p>
+        <p>별점: {starsSelected} / {totalStars} stars</p>
     </div>
 
 StarRating.propTypes = {

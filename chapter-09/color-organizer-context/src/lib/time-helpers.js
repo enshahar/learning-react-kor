@@ -31,8 +31,8 @@ const printFullDate = dateTime =>
 
 const lessThanAMinute = timeString =>
     (timeString.match(/seconds/)) ?
-        "less than a minute" :
-    timeString + ' ago'
+        '1분 이내' :
+    timeString + ' 전'
 
 const _checkNext = (result, callback) =>
     (result) ?

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>01 - Incorrect Properties don't always show errors</title>
+    <title>01 - 프로퍼티를 잘못 설정해도 항상 오류가 발생하지는 않는다</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -25,8 +25,8 @@
               <div className="summary">
                 <h1>{title}</h1>
                 <p>
-                  <span>{ingredients.length} Ingredients | </span>
-                  <span>{steps.length} Steps</span>
+                  <span>재료  {ingredients.length} 종류 | </span>
+                  <span>총 {steps.length} 단계</span>
                 </p>
               </div>
             )
@@ -35,9 +35,9 @@
     }
 
     render(
-      <Summary title="Peanut Butter and Jelly"
-               ingredients="peanut butter, jelly, bread"
-               steps="spread peanut butter and jelly between bread" />,
+      <Summary title="땅콩 버터와 젤리"
+        ingredients="땅콩 버터, 젤리, 식빵"
+        steps="땅콩 버터와 젤리를 넓게 바른 식빵 두 장을 바른면이 안으로 가도록 겹친다" />,
       document.getElementById('react-container')
     )
 

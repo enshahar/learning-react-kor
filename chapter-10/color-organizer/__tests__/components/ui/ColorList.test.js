@@ -26,7 +26,7 @@ describe("<ColorList /> UI Component", () => {
 
         it("Defaults Properties correctly", () =>
             expect(shallow(<ColorList />).find('p').text())
-                .toBe('No Colors Listed. (Add a Color)')
+                .toBe('색이 없습니다. (색을 추가해 주세요)')
         )
 
         it("Clicking default rate button do not cause Error", () => {

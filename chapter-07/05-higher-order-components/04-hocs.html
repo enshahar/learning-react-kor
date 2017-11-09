@@ -3,10 +3,11 @@
 <head>
     <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no"/>
     <meta charset="utf-8">
+	<script src="https://unpkg.com/xregexp/xregexp-all.js"></script>
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-    <title>Libraries</title>
+    <title>고차콤포넌트</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -39,17 +40,19 @@
           }
       }
 
+    const Letter = XRegExp('\\pL','g')   // 유니코드 문자클래스(\pL), global 옵션
+
     const ShowHideMessage = ({children, collapsed, expandCollapse}) =>
       <p onClick={expandCollapse}>
           {(collapsed) ?
-              children.replace(/[a-zA-Z0-9]/g, "x") :
+              children.replace(Letter, "x") :
               children}
       </p>
 
     const HiddenMessage = Expandable(ShowHideMessage)
 
     render(
-        <HiddenMessage hidden={true}>This is a hidden message</HiddenMessage>,
+        <HiddenMessage hidden={true}>이 메시지는 처음에 숨겨져 있습니다.</HiddenMessage>,
         document.getElementById('react-container')
     )
 

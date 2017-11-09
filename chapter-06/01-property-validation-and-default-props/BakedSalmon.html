@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>04 - 프로퍼티를 지정하지 않은 경우 발생하는 알아보기 힘든 오류</title>
+    <title>03 - createClass과 PropTypes을 사용해 검증에 성공하는 경우</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -33,15 +33,35 @@
                 <p>
                   <span>재료  {ingredients.length} 종류 | </span>
                   <span>총 {steps.length} 단계</span>
-                </p>
+               </p>
               </div>
             )
         }
 
     }
 
+    const ingredients = [
+        "연어",
+        "잣",
+        "버터 상추",
+		"옐로 스쿼시",
+		"올리브 오일",
+		"마늘"
+    ]
+
+    const steps = [
+      "오븐을 350도로 예열한다.",
+      "유리 베이킹 그릇에 올리브 오일을 두른다.",
+      "연어, 마늘, 잣을 그릇에 담는다.",
+      "오븐에서 15분간 익힌다.",
+      "옐로 스쿼시를 추가하고 다시 30분간 오븐에서 익힌다.",
+      "오븐에서 그릇을 꺼내서 15분간 식힌다음에 상추를 곁들여서 내놓는다."
+    ]
+
     render(
-        <Summary />,
+        <Summary title="구운 연어"
+               ingredients={ingredients}
+               steps={steps} />,
         document.getElementById('react-container')
     )
 

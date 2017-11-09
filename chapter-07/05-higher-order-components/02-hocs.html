@@ -6,7 +6,7 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-    <title>Higher Order Components</title>
+    <title>고차콤포넌트</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -42,7 +42,7 @@
               return (
                   <div className="data-component">
                       {(this.state.loading) ?
-                          <div>Loading...</div> :
+                          <div>데이터 로딩중...</div> :
                           <ComposedComponent {...this.state}
                                              {...this.props} />}
                   </div>

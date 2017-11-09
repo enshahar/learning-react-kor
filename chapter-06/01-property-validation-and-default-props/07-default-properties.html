@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>07 - default props</title>
+    <title>07 - 디폴트 프로퍼티</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -28,7 +28,7 @@
         static defaultProps = {
             ingredients: 0,
             steps: 0,
-            title: "[untitled recipe]"
+            title: "[무제]"
         }
 
         render() {
@@ -37,8 +37,8 @@
               <div className="summary">
                 <h1>{title}</h1>
                 <p>
-                  <span>{ingredients} Ingredients | </span>
-                  <span>{steps} Steps</span>
+                  <span>재료  {ingredients} 종류 | </span>
+                  <span>총 {steps} 단계</span>
                 </p>
               </div>
             )

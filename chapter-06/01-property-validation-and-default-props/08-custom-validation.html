@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>08 - custom validation</title>
+    <title>08 - 커스텀 검증</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -24,16 +24,16 @@
             steps: PropTypes.number,
             title: (props, propName) =>
                 (typeof props[propName] !== 'string') ?
-                    new Error("A title must be a string") :
+                    new Error("제목(title)은 문자열이어야 합니다.") :
                     (props[propName].length > 20) ?
-                        new Error(`title is over 20 characters`) :
+                        new Error(`제목은 20자 이내여야 합니다.`) :
                         null
         }
 
         static defaultProps = {
           ingredients: 0,
           steps: 0,
-          title: '[Untitled Recipe]'
+          title: '[무제]'
         }
 
         render() {
@@ -42,8 +42,8 @@
               <div className="summary">
                 <h1>{title}</h1>
                 <p>
-                  <span>{ingredients} Ingredients | </span>
-                  <span>{steps} Steps</span>
+                  <span>재료  {ingredients} 종류 | </span>
+                  <span>총 {steps} 단계</span>
                 </p>
               </div>
             )
@@ -52,7 +52,7 @@
     }
 
     render(
-        <Summary title="really delicious eggs and biscuits" />,
+        <Summary title="정말 맛있는 비스킷과 달걀" />,
         document.getElementById('react-container')
     )
 

@@ -6,7 +6,7 @@
     <script src="https://unpkg.com/redux@3.7.2/dist/redux.min.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
     <script src="https://unpkg.com/node-uuid@1.4.7/uuid.js"></script>
-    <title>Redux</title>
+    <title>액션 생성기</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -108,10 +108,10 @@
                     sortBy: "SORTED_BY_DATE"
                 })
 
-    store.dispatch(addColor("Party Pink", "#F142FF"))
-    store.dispatch(addColor("lawn", "#009900"))
-    store.dispatch(addColor("Tomato", "#990000"))
-    store.dispatch(addColor("Big Blue", "#0000FF"))
+    store.dispatch(addColor("파티 핑크", "#F142FF"))
+    store.dispatch(addColor("잔디", "#009900"))
+    store.dispatch(addColor("토마토", "#990000"))
+    store.dispatch(addColor("큰 파랑", "#0000FF"))
 
     console.log(store.getState().colors.map(c=>c.title).join(", "))
 

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Factories</title>
+    <title>팩토리</title>
 </head>
 <body>
 
@@ -17,12 +17,12 @@
 <script>
 
     const list = ReactDOMFactories.ul({"className": "ingredients"},
-      ReactDOMFactories.li(null, "1 lb Salmon"),
-      ReactDOMFactories.li(null, "1 cup Pine Nuts"),
-      ReactDOMFactories.li(null, "2 cups Butter Lettuce"),
-      ReactDOMFactories.li(null, "1 Yellow Squash"),
-      ReactDOMFactories.li(null, "1/2 cup Olive Oil"),
-      ReactDOMFactories.li(null, "3 cloves of Garlic")
+      ReactDOMFactories.li(null,"연어 500그램"),
+      ReactDOMFactories.li(null,"잣 1 컵"),
+      ReactDOMFactories.li(null,"버터 상추 2 컵"),
+      ReactDOMFactories.li(null,"옐로 스쿼시(Yellow Squash, 호박의 한 종류) 1개"),
+      ReactDOMFactories.li(null,"올리브 오일 1/2 컵"),
+      ReactDOMFactories.li(null,"마늘 3 쪽")
     )
 
     ReactDOM.render(list, document.getElementById('react-container'))

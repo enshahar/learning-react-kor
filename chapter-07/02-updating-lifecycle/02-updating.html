@@ -3,10 +3,11 @@
 <head>
     <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no"/>
     <meta charset="utf-8">
+    <script src="https://unpkg.com/xregexp/xregexp-all.js"></script>
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-    <title>Updating Lifecycle</title>
+    <title>갱신 생애 주기</title>
 </head>
 <body>
 <div id="react-container"></div>
@@ -14,6 +15,8 @@
 
   const { Component } = React
   const { render } = ReactDOM
+  
+  const Letter = XRegExp('\\pL','g')   // 유니코드 문자클래스(\pL), global 옵션
 
   class HiddenMessage extends Component {
 
@@ -25,7 +28,7 @@
       }
 
       //
-      // Solution
+      // 해법
       //
 
       componentWillReceiveProps(nextProps) {
@@ -38,7 +41,7 @@
           return (
               <p>
                   {(hidden) ?
-                      children.replace(/[a-zA-Z0-9]/g, "x") :
+                      children.replace(Letter, "x") :
                       children
                   }
               </p>
@@ -55,7 +58,7 @@
               messages: [
                   "The crow crows after midnight",
                   "Bring a watch and dark clothes to the spot",
-                  "Jericho Jericho Go"
+                  "엄마가 섬그늘에 굴 따러 가면"
               ],
               showing: -1
           }

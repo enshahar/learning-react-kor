@@ -1,36 +1,36 @@
 [
-    {
-        "name": "Baked Salmon",
-        "ingredients": [
-            { "name": "Salmon", "amount": 1, "measurement": "lb" },
-            { "name": "Pine Nuts", "amount": 1, "measurement": "cup" },
-            { "name": "Butter Lettuce", "amount": 2, "measurement": "cups" },
-            { "name": "Yellow Squash", "amount": 1, "measurement": "med" },
-            { "name": "Olive Oil", "amount": 0.5, "measurement": "cup" },
-            { "name": "Garlic", "amount": 3, "measurement": "cloves" }
-        ],
-        "steps": [
-            "Preheat the oven to 350 degrees.",
-            "Spread the olive oil around a glass baking dish.",
-            "Add the salmon, garlic, and pine nuts to the dish.",
-            "Bake for 15 minutes.",
-            "Add the yellow squash and put back in the oven for 30 mins.",
-            "Remove from oven and let cool for 15 minutes. Add the lettuce and serve."
-        ]
-    },
-    {
-        "name": "Fish Tacos",
-        "ingredients": [
-            { "name": "Whitefish", "amount": 1, "measurement": "lb" },
-            { "name": "Cheese", "amount": 1, "measurement": "cup" },
-            { "name": "Iceberg Lettuce", "amount": 2, "measurement": "cups" },
-            { "name": "Tomatoes", "amount": 2, "measurement": "large"},
-            { "name": "Tortillas", "amount": 3, "measurement": "med" }
-        ],
-        "steps": [
-            "Cook the fish on the grill until hot.",
-            "Place the fish on the 3 tortillas.",
-            "Top them with lettuce, tomatoes, and cheese."
-        ]
-    }
+  {
+    "name": "구운 연어",
+    "ingredients": [
+      { "name": "연어", "amount": 500, "measurement": "그램" },
+      { "name": "잣", "amount": 1, "measurement": "컵" },
+      { "name": "버터 상추", "amount": 2, "measurement": "컵" },
+      { "name": "옐로 스쿼시(Yellow Squash, 호박의 한 종류)", "amount": 1, "measurement": "개" },
+      { "name": "올리브 오일", "amount": 0.5, "measurement": "컵" },
+      { "name": "마늘", "amount": 3, "measurement": "쪽" }
+    ],
+    "steps": [
+      "오븐을 350도로 예열한다.",
+      "유리 베이킹 그릇에 올리브 오일을 두른다.",
+      "연어, 마늘, 잣을 그릇에 담는다.",
+      "오븐에서 15분간 익힌다.",
+      "옐로 스쿼시를 추가하고 다시 30분간 오븐에서 익힌다.",
+      "오븐에서 그릇을 꺼내서 15분간 식힌다음에 상추를 곁들여서 내놓는다."
+    ]
+  },
+  {
+    "name": "생선 타코",
+    "ingredients": [
+      { "name": "흰살생선", "amount": 500, "measurement": "그램" },
+      { "name": "치즈", "amount": 1, "measurement": "컵" },
+      { "name": "아이스버그 상추", "amount": 2, "measurement": "컵" },
+      { "name": "토마토", "amount": 2, "measurement": "개(큰것)"},
+      { "name": "또띠야", "amount": 3, "measurement": "개" }
+    ],
+    "steps": [
+      "생선을 그릴에 익힌다.",
+      "또띠야 3장 위에 생선을 얹는다.",
+      "또띠야에 얹은 생선 위에 상추, 토마토, 치즈를 얹는다."
+    ]
+  }
 ]
