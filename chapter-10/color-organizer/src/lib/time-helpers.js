@@ -1,13 +1,14 @@
-const second = 1000,
-    minute = 60 * second,
-    hour = 60 * minute,
-    day = 24 * hour,
-    timeframe = {second, minute, hour, day},
+// 영어로 되어있는 시간 표현을 한글로 바꿈
+const 초 = 1000,
+    분 = 60 * 초,
+    시간 = 60 * 분,
+    일 = 24 * 시간,
+    timeframe = {초, 분, 시간, 일},
     breakpoints = {
-        second: 60,
-        minute: 60,
-        hour: 24,
-        day: 30
+        초: 60,
+        분: 60,
+        시간: 24,
+        일: 30
     }
 
 const toDate = timeStampString => new Date(timeStampString)
@@ -19,7 +20,7 @@ const isUnderTime = (diff, timeframe, time) => diff / timeframe < time
 const diffOverTimeframe = (diff, timeframe) => Math.floor(diff/timeframe)
 
 const printResult = (result, timeframeName) =>
-    `${result} ${timeframeName + ((result > 1) ? "s" : "")}`
+    `${result}${timeframeName}`  // 우리말은 `초`에 복수 필요 없음
 
 const checkDate = (diff, timeframeName, underTime, timeframe) =>
     (isUnderTime(diff, timeframe[timeframeName], underTime)) ?
@@ -29,10 +30,15 @@ const checkDate = (diff, timeframeName, underTime, timeframe) =>
 const printFullDate = dateTime =>
     `${dateTime.getMonth() + 1}/${dateTime.getDate()}/${dateTime.getFullYear()}`
 
+// 날짜를 UTC 기준으로 표시
+const printFullUTCDate = dateTime =>
+    `${dateTime.getUTCMonth() + 1}/${dateTime.getUTCDate()}/${dateTime.getUTCFullYear()}`
+	
 const lessThanAMinute = timeString =>
-    (timeString.match(/seconds/)) ?
+    // 단위가 초이고 60초 아래인 경우에만 1분 이내라고 표시
+    timeString.match(/초/) &&  parseFloat(timeString) <= 60 ?  
         '1분 이내' :
-        timeString + '이전'
+        timeString + ' 이전'
 
 const _checkNext = (result, callback) =>
     (result) ?
@@ -47,7 +53,7 @@ const checkNext = ([tfName, ...rest], timeframe, timestamp, now) =>
 
 const howLongAgo = (remainingTimeframe, timeframe, timestamp, now) =>
     (!remainingTimeframe.length) ?
-        printFullDate(toDate(timestamp)) :
+        printFullUTCDate(toDate(timestamp)) :
         checkNext(remainingTimeframe, timeframe, timestamp, now)
 
 export const ago = (timestamp, now=new Date().toString()) =>

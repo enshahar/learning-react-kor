@@ -9,7 +9,7 @@ global.React = React
 const html = renderToString(<Menu recipes={data}/>)
 
 const logger = (req, res, next) => {
-    console.log(`${req.method} request for '${req.url}'`)
+    console.log(`${req.url} 에 대한 ${req.method} 요청`)
     next()
 }
 
@@ -18,7 +18,7 @@ const sendHTMLPage = (req, res) =>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>React Recipes App</title>
+        <title>리액트 조리법 앱</title>
     </head>
     <body>
         <div id="react-container">${html}</div>
@@ -36,5 +36,5 @@ const app = express()
     .use(sendHTMLPage)
 
 app.listen(3000, () =>
-    console.log(`Recipe app running at 'http://localhost:3000'`)
+    console.log(`'http://localhost:3000'에서 조리법 앱 작동중`)
 )

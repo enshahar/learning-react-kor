@@ -18,7 +18,7 @@ const clientLogger = store => next => action => {
 }
 
 const serverLogger = store => next => action => {
-    console.log('\n  dispatching server action\n')
+    console.log('\n  서버 액션 디스패칭\n')
     console.log(action)
     console.log('\n')
     return next(action)

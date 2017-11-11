@@ -2,9 +2,9 @@ import C from '../../../src/constants'
 import { color } from '../../../src/store/reducers'
 import deepFreeze from 'deep-freeze'
 
-describe("color Reducer", () => {
+describe("color 리듀서", () => {
 
-    it("ADD_COLOR success", () => {
+    it("ADD_COLOR 성공", () => {
         const state = {}
         const action = {
             type: C.ADD_COLOR,
@@ -26,7 +26,7 @@ describe("color Reducer", () => {
             })
     })
 
-    it("RATE_COLOR success", () => {
+    it("RATE_COLOR 성공", () => {
         const state = {
             id: 0,
             title: 'Test Teal',
@@ -52,7 +52,7 @@ describe("color Reducer", () => {
             })
     })
 
-    it("Defaults array for incorrect action", () =>
+    it("잘못된 액션에 대한 디폴트 배열", () =>
         expect(color()).toEqual({}))
 
 })

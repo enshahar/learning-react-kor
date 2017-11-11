@@ -43,7 +43,7 @@ describe("<Colors /> Container ", () => {
             .props()
             .colors[0]
             .title
-        ).toBe("tomato")
+        ).toBe("토마토")
     })
 
     it("dispatches a REMOVE_COLOR action", () => {

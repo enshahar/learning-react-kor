@@ -973,7 +973,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 window.React = _react2.default;
 
-alert('bundle loaded, Rendering in browser');
+alert('bundle loaded, hydrating browser');
 
 (0, _reactDom.hydrate)(_react2.default.createElement(_Menu2.default, { recipes: __DATA__ }), document.getElementById("react-container"));
 
@@ -8215,7 +8215,7 @@ var possibleStandardNames$1 = {
   acceptcharset: 'acceptCharset',
   'accept-charset': 'acceptCharset',
   accesskey: 'accessKey',
-  action: '액션',
+  action: 'action',
   allowfullscreen: 'allowFullScreen',
   allowtransparency: 'allowTransparency',
   alt: 'alt',
@@ -21208,7 +21208,7 @@ var Menu = function Menu(_ref) {
             React.createElement(
                 "h1",
                 null,
-                "Delicious Recipes"
+                "\uB9DB\uC788\uB294 \uC870\uB9AC\uBC95"
             )
         ),
         React.createElement(
@@ -21257,7 +21257,7 @@ var Recipe = function Recipe(_ref) {
             name
         ),
         React.createElement(_IngredientsList2.default, { list: ingredients }),
-        React.createElement(_Instructions2.default, { title: 'Cooking Instructions',
+        React.createElement(_Instructions2.default, { title: '\uC870\uB9AC \uC808\uCC28',
             steps: steps })
     );
 };

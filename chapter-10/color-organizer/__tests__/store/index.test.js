@@ -33,9 +33,9 @@ describe("Store Factory", () => {
         it("logs state before action and state after", () =>
             expect(console.log.mock.calls.map(args=>args[0]))
                 .toEqual([
-                    "prev state",
-                    "action",
-                    "next state"
+                    "이전 상태",
+                    "액션",
+                    "다음상태"
                 ])
         )
 

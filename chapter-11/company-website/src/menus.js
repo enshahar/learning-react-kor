@@ -10,10 +10,10 @@ const selectedStyle = {
 export const MainMenu = () =>
     <nav className="main-menu">
         <NavLink to="/"><HomeIcon/></NavLink>
-        <NavLink to="/about" activeStyle={selectedStyle}>[About]</NavLink>
-        <NavLink to="/events" activeStyle={selectedStyle}>[Events]</NavLink>
-        <NavLink to="/products" activeStyle={selectedStyle}>[Products]</NavLink>
-        <NavLink to="/contact" activeStyle={selectedStyle}>[Contact Us]</NavLink>
+        <NavLink to="/about" activeStyle={selectedStyle}>[회사 소개]</NavLink>
+        <NavLink to="/events" activeStyle={selectedStyle}>[이벤트]</NavLink>
+        <NavLink to="/products" activeStyle={selectedStyle}>[제품]</NavLink>
+        <NavLink to="/contact" activeStyle={selectedStyle}>[고객 지원]</NavLink>
     </nav>
 
 export const AboutMenu = ({ match }) =>
@@ -21,25 +21,25 @@ export const AboutMenu = ({ match }) =>
         <li>
             <NavLink to="/about"
                   style={match.isExact && selectedStyle}>
-                [Company]
+                [회사]
             </NavLink>
         </li>
         <li>
             <NavLink to="/about/history"
                   activeStyle={selectedStyle}>
-                [History]
+                [연혁]
             </NavLink>
         </li>
         <li>
             <NavLink to="/about/services"
                   activeStyle={selectedStyle}>
-                [Services]
+                [서비스]
             </NavLink>
         </li>
         <li>
             <NavLink to="/about/location"
                   activeStyle={selectedStyle}>
-                [Location]
+                [위치]
             </NavLink>
         </li>
     </div>

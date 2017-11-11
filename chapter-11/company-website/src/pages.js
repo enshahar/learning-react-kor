@@ -10,38 +10,38 @@ const PageTemplate = ({children}) =>
 
 export const Home = () =>
     <div className="home">
-        <h1>[Company Website]</h1>
+        <h1>[회사 웹사이트]</h1>
         <nav>
-            <Link to="about">[About]</Link>
-            <Link to="events">[Events]</Link>
-            <Link to="products">[Products]</Link>
-            <Link to="contact">[Contact Us]</Link>
+            <Link to="about">[회사 소개]</Link>
+            <Link to="events">[이벤트]</Link>
+            <Link to="products">[제품]</Link>
+            <Link to="contact">[고객 지원]</Link>
         </nav>
     </div>
 
 export const Whoops404 = ({ location }) =>
     <div className="whoops-404">
-        <h1>Resource not found at '{location.pathname}'</h1>
+        <h1>'{location.pathname}' 경로의 자원을 찾을 수 없습니다.</h1>
     </div>
 
 export const Events = () =>
     <PageTemplate>
       <section className="events">
-          <h1>[Event Calendar]</h1>
+          <h1>[이벤트 달력]</h1>
       </section>
     </PageTemplate>
 
 export const Products = () =>
     <PageTemplate>
         <section className="products">
-            <h1>[Product Catalog]</h1>
+            <h1>[제품 목록]</h1>
         </section>
     </PageTemplate>
 
 export const Contact = () =>
     <PageTemplate>
         <section className="contact">
-            <h1>[Contact Us]</h1>
+            <h1>[고객 지원]</h1>
         </section>
     </PageTemplate>
 
@@ -58,13 +58,20 @@ export const About = ({ match }) =>
 
 export const Services = () =>
     <section className="services">
-        <h2>Our Services</h2>
+        <h2>서비스</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
-            Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
-            Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
-            sodales ligula in libero.
+           거친 것은 든 뼈 그들에게 이것이다. 이상은
+           위하여서, 인간의 불어 있으며, 위하여 있다. 
+           있음으로써 그들은 그러므로 봄바람을 가치를 
+           것이다. 보이는 인생을 사라지지 이상을 남는 
+           심장은 것이다. 피부가 석가는 원대하고, 얼음과 
+           가슴에 구하지 있음으로써 교향악이다. 가슴이 
+           끝까지 하는 끓는 넣는 보이는 황금시대다. 
+           가치를 구하기 이상은 끓는 아름답고 것이다. 
+           돋고, 반짝이는 소담스러운 황금시대의 이상, 
+           보이는 길지 때문이다. 바로 무엇을 공자는 
+           우리 청춘 인도하겠다는 피다. 석가는 곳으로 
+           청춘의 두손을 무엇이 실로 무엇을 있으랴?
         </p>
         <p>
             Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.
@@ -78,7 +85,7 @@ export const Services = () =>
 
 export const Location = () =>
     <section className="location">
-        <h2>Our Location</h2>
+        <h2>회사 위치</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
             Sed cursus ante dapibus diam.
@@ -101,7 +108,7 @@ export const Location = () =>
 
 export const Company = () =>
     <section className="company">
-        <h2>About the Company</h2>
+        <h2>회사 소개</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
             Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
@@ -121,7 +128,7 @@ export const Company = () =>
 
 export const History = () =>
     <section className="history">
-        <h2>Our History</h2>
+        <h2>연혁</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
             Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.

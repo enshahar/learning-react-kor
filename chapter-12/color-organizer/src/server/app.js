@@ -30,7 +30,7 @@ const buildHTMLPage = ({html, state, css}) => `
     <head>
         <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" />
         <meta charset="utf-8">
-        <title>Universal Color Organizer</title>
+        <title>유니버셜 색 관리 앱</title>
         <style>${staticCSS}</style>
     </head>
     <body>
@@ -73,7 +73,7 @@ const respond = ({url}, res) =>
     )
 
 const logger = (req, res, next) => {
-    console.log(`${req.method} request for '${req.url}'`)
+    console.log(`'${req.url}'에 대한 ${req.method} 요청`)
     next()
 }
 

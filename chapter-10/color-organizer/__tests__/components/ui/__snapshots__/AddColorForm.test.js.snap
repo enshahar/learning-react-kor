@@ -6,7 +6,7 @@ exports[`<AddColorForm /> UI Componnet Rendering the UI renders correctly 1`] = 
   onSubmit={[Function]}
 >
   <input
-    placeholder="color title..."
+    placeholder="색 이름..."
     required={true}
     type="text"
   />
@@ -15,7 +15,7 @@ exports[`<AddColorForm /> UI Componnet Rendering the UI renders correctly 1`] = 
     type="color"
   />
   <button>
-    ADD
+    추가
   </button>
 </form>
 `;

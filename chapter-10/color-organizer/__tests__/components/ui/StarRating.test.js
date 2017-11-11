@@ -28,7 +28,7 @@ describe("<StarRating /> UI Component", () => {
 
         it("displays {rating} of {total} stars", () =>
             expect(wrapper.find("p").text())
-                .toEqual("4 of 7 stars"))
+                .toEqual("평점: 4 / 7"))
 
         it("rating does cause error", () => {
             wrapper.children().childAt(3).simulate('click')

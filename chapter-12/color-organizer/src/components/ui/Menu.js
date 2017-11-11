@@ -6,9 +6,9 @@ const selectedStyle = { color: 'red' }
 
 const Menu = ({ sort }) =>
     <nav className="menu">
-        <Link to="/" activeStyle={(sort === '/') ? selectedStyle : {}}>date</Link>
-        <Link to="/sort/title" activeStyle={selectedStyle}>title</Link>
-        <Link to="/sort/rating" activeStyle={selectedStyle}>rating</Link>
+        <Link to="/" activeStyle={(sort === '/') ? selectedStyle : {}}>날짜</Link>
+        <Link to="/sort/title" activeStyle={selectedStyle}>이름</Link>
+        <Link to="/sort/rating" activeStyle={selectedStyle}>평점</Link>
     </nav>
 
 Menu.propTypes = {
