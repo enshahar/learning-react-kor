@@ -46,3 +46,6 @@ jspm_packages
 
 # notepad++ backup
 nppBackup
+
+# package lock
+package-lock.json

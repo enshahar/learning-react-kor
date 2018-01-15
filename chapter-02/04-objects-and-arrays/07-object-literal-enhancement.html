@@ -11,12 +11,12 @@
 <p>Open the console</p>
 <script type="text/babel">
 
-    // Literal Enhancements with functions
+    // 함수를 포함하는 객체 리터럴 개선
 
-    var name = "Tallac"
+    var name = "탈락"
     var elevation = 9738
     var print = function() {
-      console.log(`Mt. ${this.name} is ${this.elevation} feet tall`)
+      console.log(`${this.name} 산의 높이는 ${this.elevation}피트입니다.`)
     }
 
     var funHike = { name,elevation,print }

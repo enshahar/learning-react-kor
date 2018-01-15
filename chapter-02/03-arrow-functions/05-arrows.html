@@ -11,23 +11,23 @@
 <p>Open the console</p>
 <script type="text/babel">
 
-    // Function
+    // 함수
 
     var lordify = function(firstName, land) {
 
       if (!firstName) {
-        throw new Error('A firstName is required to lordify')
+        throw new Error('lordify에 이름을 넘겨야 합니다.')
       }
 
       if (!land) {
-        throw new Error('A lord must have a land')
+        throw new Error('영주에게는 영지가 있어야 합니다.')
       }
 
-      return `${firstName} of ${land}`
+      return `${land}의 ${firstName}`
     }
 
-    console.log( lordify("Kelly", "Sonoma") )
-    console.log( lordify("Dave") )
+    console.log( lordify("이계영", "멜버른") )
+    console.log( lordify("오현석") )
 
 </script>
 </body>

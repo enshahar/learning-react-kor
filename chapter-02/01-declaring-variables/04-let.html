@@ -11,16 +11,17 @@
 <p>Open the console</p>
 <script type="text/babel">
 
-    // ES6 lexical variable scoping with let
+    // ES6 let을 쓰면 구문적 변수 영역 규칙을
+	// 적용할 수 있다
 
-    var topic = "JavaScript"
+    var topic = "자바스크립트"
 
     if (topic) {
-      let topic = "React"
-      console.log('block', topic)
+      let topic = "리액트"
+      console.log('블록', topic)
     }
 
-    console.log('global', topic)
+    console.log('글로벌', topic)
 
 </script>
 </body>

@@ -19,11 +19,11 @@
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 </head>
 <body>
-  <h1>Click on a Box</h1>
+  <h1>박스를 클릭하세요</h1>
   <div id="container"></div>
 <script type="text/babel">
 
-    // Problem, counters are not scoped to for loop blocks
+    // 문제: 카운터 변수 i 영역이 for 루프 블럭 안으로만 제한되지 않는다
 
     var div,
         container = document.getElementById('container')
@@ -31,7 +31,7 @@
     for (var i=0; i<5; i++) {
       div = document.createElement('div')
       div.onclick = function() {
-        alert('This is box #' + i)
+        alert('이것은 박스 #' + i + '입니다.')
       }
       container.appendChild(div)
     }
