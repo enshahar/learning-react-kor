@@ -1,23 +1,23 @@
-// Log Clock Time every Second
+// 매 초 시간을 로그에 남긴다.
 setInterval(logClockTime, 1000);
 
 function logClockTime() {
 
-    // Get Time string as civilian time
+    // 현재 시각을 상용시로 표현하는 문자열을 얻는다.
     var time = getClockTime();
 
-    // Clear the Console and log the time
+    // 콘솔을 지우고 시간을 로그에 남긴다.
     console.clear();
     console.log(time);
 }
 
 function getClockTime() {
 
-    // Get the Current Time
+    // 현재 시각을 얻는다.
     var date = new Date();
     var time = "";
 
-    // Serialize clock time
+    // 시각을 직렬화한다.
     var time = {
         hours: date.getHours(),
         minutes: date.getMinutes(),
@@ -25,7 +25,7 @@ function getClockTime() {
         ampm: "AM"
     }
 
-    // Convert to civilian time
+    // 상용시로 변환한다.
     if (time.hours == 12) {
         time.ampm = "PM";
     } else if (time.hours > 12) {
@@ -33,22 +33,22 @@ function getClockTime() {
         time.hours -= 12;
     }
 
-    // Prepend a 0 on the hours to make double digits
+    // 시간을 2글자로 만들기 위해 앞에 0을 붙인다.
     if (time.hours < 10) {
         time.hours = "0" + time.hours;
     }
 
-    // prepend a 0 on the minutes to make double digits
+    // 분을 2글자로 만들기 위해 앞에 0을 붙인다.
     if (time.minutes < 10) {
         time.minutes = "0" + time.minutes;
     }
 
-    // prepend a 0 on the seconds to make double digits
+    // 초를 2글자로 만들기 위해 앞에 0을 붙인다.
     if (time.seconds < 10) {
         time.seconds = "0" + time.seconds;
     }
 
-    // Format the clock time as a string "hh:mm:ss tt"
+    // "hh:mm:ss tt" 형식의 문자열을 만든다.
     return time.hours + ":"
         + time.minutes + ":"
         + time.seconds + " "

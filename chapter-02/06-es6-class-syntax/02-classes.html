@@ -11,7 +11,7 @@
 <p>Open the console</p>
 <script type="text/babel">
 
-    // The new way... with classes
+    // 클래스를 사용해 정의하는 새로운 방식
 
     class Vacation {
 
@@ -21,12 +21,12 @@
     }
 
     print() {
-      console.log(`${this.destination} will take ${this.length} days.`)
+      console.log(this.destination + "은(는) " + this.length + "일 걸립니다.")
     }
 
     }
 
-    const trip = new Vacation("Santiago, Chile", 9)
+    const trip = new Vacation("칠레 산티아고", 9)
 
     trip.print()
 

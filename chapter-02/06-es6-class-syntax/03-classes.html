@@ -11,7 +11,7 @@
 <p>Open the console</p>
 <script type="text/babel">
 
-    // Inheritance
+    // 상속
 
     class Vacation {
       constructor(destination, length) {
@@ -20,7 +20,7 @@
       }
 
       print() {
-        console.log(`${this.destination} will take ${this.length} days.`)
+        console.log(this.destination + "은(는) " + this.length + "일 걸립니다.")
       }
 
     }
@@ -33,14 +33,14 @@
 
       print() {
         super.print()
-        console.log(`bring your ${this.gear.join(" and your ")}`)
+        console.log(`당신의 ${this.gear.join("와(과) 당신의 ")}를(을) 가져오십시오.`)
       }
     }
 
     const trip = new Expedition(
-      "Mt. Whitney",
+      "한라산",
       3,
-      ["sunglasses", "prayer flags", "camera"]
+      ["선글라스", "오색 깃발", "카메라"]
     )
 
     trip.print()
