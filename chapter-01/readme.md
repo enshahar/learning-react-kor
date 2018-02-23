@@ -52,7 +52,7 @@ React Developer Tools 설치하기
 
 * React Developer Tools ([크롬 버전](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=ko) | [파이퍼폭스 버전](https://addons.mozilla.org/ko/firefox/addon/react-devtools/))
 
-JSBin 사용하기
+JSBin 사용해보기
 --------------------------------
 이 저장소는 JSBin에 호스팅된 예제의 주소를 제공합니다. 여러분은 설치, 구축 과정 없이 예제 코드를 바꿔보면서 어떻게 결과가 변경되는 지 확인하실 수 있습니다.
 
