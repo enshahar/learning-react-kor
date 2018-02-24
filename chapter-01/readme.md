@@ -1,107 +1,99 @@
-Chapter 1 : Introduction
+챕터 1 : 소개
 ==================
-The widespread use of React on large websites shows that it is stable enough to use at scale. React is ready.
+많은 대규모 웹사이트에서 React를 사용하고 있습니다. 이는 React가 큰 규모에서도 충분히 안정적임을 보여줍니다. React는 준비되었습니다.
 
-Installing Node.js and NPM
+Node.js 와 NPM 설치하기
 --------------------
-When working with Node and React, you will need to use the command line. On the Mac, this is called the terminal. On a PC,
-it is called the command prompt. Run the following commands to check your current version on node and npm. If needed,
-instructions on how to install or upgrade are below.
+Node와 React는 커맨드 라인을 통해서 사용하게 됩니다. 커맨드라인은 Mac에서는 터미널, PC에서는 커맨드 프롬프트로 불립니다. 아래의 명령어를 실행하여 Node와 NPM의 현재 버전을 확인하세요.
 
-First, Check to see if you have Node JS installed
+일단 NodeJS가 설치되어 있는지 확인하세요.
 ```
 $ node -v
 ```
 
-Then, if needed, [install or update Node.js](https://nodejs.org/en/) from the Node.js website. Download the installer,
-run it, and follow the instructions.
+만약 설치되어 있지 않다면 [공식 웹사이트 (한국어)](https://nodejs.org/ko/)에서 설치하세요. 인스톨러를 다운로드 한 후, 실행하고 인스톨러의 지시에 따르세요.
 
 --------------------------------
 
-Next, check your version of npm:
+다음으로, NPM의 버전을 확인하세요.
 ```
 $ npm -v
 ```
 
-Then, if you are running anything less than version 3, you will need to update npm:
+만약 버전 3 미만이라면 NPM을 업데이트하셔야 합니다:
 
-##### Update NPM on Mac
+##### Mac에서 NPM 업데이트하기
 ```
 $ sudo npm update -g npm
 ```
 
-##### Update NPM on PC
-Make sure to run the command prompt with administrator privileges:
+##### PC에서 NPM 업데이트하기
+커맨드 프롬프트를 관리자 권한으로 실행해야 합니다:
 ```
 $ npm update -g npm
 ```
 
-##### Optionally install Yarn
-Yarn is a package manager created at Facebook. It is a compatible alternative to npm. Yarn's use is not required,
-but you can optionally install it if you like:
+##### (옵션) Yarn 설치
+YarnYarn은 Facebook에서 개발된 npm과 호환되는 패키지 매니저입니다. Yarn을 사용하는 것은 필수는 아니지만, 원한다면 선택적으로 설치하셔도 됩니다:
 ```
 $ sudo npm install -g yarn
 ```
 
-Finally, there are some nice options for switching Node versions. This is not required, but you can
-optionally install one of these version mangers:
+마지막으로, 여러 버전의 Node를 전환하는 좋은 옵션들이 있습니다. 필수는 아니지만 아래 중 하나의 버전 매니저를 설치하셔도 됩니다:
 
-* [Install Node Version Manager - mac only (optional)](https://github.com/creationix/nvm)
-* [Install NVM-Windows - pc only (optional)](https://github.com/coreybutler/nvm-windows)
+* [Node Version Manager 설치 - Mac 전용 (옵션)](https://github.com/creationix/nvm)
+* [NVM-Windows 설치 - PC 전용 (옵션)](https://github.com/coreybutler/nvm-windows)
 
 --------------------------------
 
-Installing the React Tools
+React Developer Tools 설치하기
 --------------------------------
-Next, install the React developer tools:
+아래 주소에서 설치하세요:
 
-* Development Tools ([Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) |
-[Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/))
+* React Developer Tools ([크롬 버전](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=ko) | [파이퍼폭스 버전](https://addons.mozilla.org/ko/firefox/addon/react-devtools/))
 
-Working with JSBin
+JSBin 사용해보기
 --------------------------------
-This repository links to samples hosted on JSBin so that you can immediately begin changing each sample and checking
-output to see how each sample has changed.
+이 저장소는 JSBin에 호스팅된 예제의 주소를 제공합니다. 여러분은 설치, 구축 과정 없이 예제 코드를 바꿔보면서 어떻게 결과가 변경되는 지 확인하실 수 있습니다.
 
-Here is a Hello World sample that JSBin has assigned the identifier __gosabo__. There are 3 available versions of this sample in JSBin under the same identifier.
+아래에는 **gosabo**가 JSBin에 업로드한 Hello World 예제가 있습니다. JSBin에 업로드된 이 예제에는 세 가지 버전이 있습니다.
 
-Note: All JSBin links throughout this repository use React 15. To update, change the script tag CDN links to version 16.
+참고: 이 저장소에서 링크된 JSBin 예제는 모두 React 15를 사용합니다. 업데이트하려면, script 태그의 CDN 주소를 16으로 변경하세요.
 
-Change
+아래의 코드를
 
 ```html
   <script src="https://fb.me/react-with-addons-15.1.0.js"></script>
   <script src="https://fb.me/react-dom-15.1.0.js"></script>
 ```
 
-To
+아래와 같이 변경해주세요
 
 ```html
   <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 ```
 
-##### A preview of the latest version in a sample:
+##### 예제의 최신 버전 보기 (에디터 없음. 결과만):
 [http://output.jsbin.com/gosabo](http://output.jsbin.com/gosabo)
-##### The sample in the editor:
+##### 예제와 에디터 같이 보기:
 [http://output.jsbin.com/gosabo/edit](http://output.jsbin.com/gosabo/edit)
-##### The sample in the editor with JavaScript and output tabs open:
+##### 에졔와 에디터 같이 보기 (Javascript 탭 열린채로):
 [http://jsbin.com/gosabo/edit?js,output](http://jsbin.com/gosabo/edit?js,output)
-##### A pure preview of the sample:
+##### 에디터없이 예제만 보기:
 [http://output.jsbin.com/gosabo/quite](http://output.jsbin.com/gosabo/quiet)
-##### Version 1 of the sample as output:
+##### 예제의 버전 1 미리보기:
 [http://output.jsbin.com/gosabo/1](http://output.jsbin.com/gosabo/1)
-##### Version 1 of te sample in the editor:
+##### 버전 1 예제와 에디터 같이 보기:
 [http://output.jsbin.com/gosabo/1/edit](http://output.jsbin.com/gosabo/1/edit)
-##### Version 2 of the sample as output:
+##### 버전 2 예제와 에디터 같이 보기:
 [http://output.jsbin.com/gosabo/2](http://output.jsbin.com/gosabo/2)
-##### Version 3 of the sample in the editor with html and javascript tabs open:
+##### 버전 3 예제와 에디터 같이 보기 (HTML, Javascript 탭 열기):
 [http://output.jsbin.com/gosabo/3/edit](http://output.jsbin.com/gosabo/3/edit?html,js)
 
-CDN's for JavaScript libraries
+Javascript 라이브러리 CDN
 --------------------------------
-Ultimately, we will be working with webpack and npms, but to get running quickly, here are some CDN links that
-can be included in JSBin with this syntax: `<script src="https://[CDN LINK]"></script>`
+궁극적으로 우리는 webpack과 npm을 사용해서 작업하게 되겠지만, 바로 시작하기 위해서 아래와 같은 CDN 주소가 JSBin에 이런 형식으로 포함될 수 있습니다: `<script src="https://[CDN 주소]"></script>`
 
 * [React](https://unpkg.com/react@16/umd/react.development.js)
 * [React DOM](https://unpkg.com/react-dom@16/umd/react-dom.development.js)
@@ -110,15 +102,15 @@ can be included in JSBin with this syntax: `<script src="https://[CDN LINK]"></s
 * [Redux](https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.min.js)
 * [React Router Source](https://cdnjs.cloudflare.com/ajax/libs/react-router/4.0.0/react-router.min.js)
 
-React Resources
+React 리소스
 --------------------------------
-Finally, we have some links to resources and official documentation for the libraries that we will be using:
+마지막으로, 우리가 사용하게 될 라이브러리의 공식 문서와 리소스입니다. 모든 내용은 영문으로 제공됩니다:
 
-* [React Documentation](https://facebook.github.io/react/index.html)
-* [React Source](https://github.com/facebook/react)
+* [React 공식문서](https://facebook.github.io/react/index.html)
+* [React Github](https://github.com/facebook/react)
 * [React NPM](https://www.npmjs.com/package/react)
-* [Webpack Documentation](https://webpack.js.org/)
-* [Flux Documentation](https://facebook.github.io/flux/docs/overview.html)
-* [Redux Documentation](http://redux.js.org/index.html)
-* [Jest Documentation](https://facebook.github.io/jest/)
-* [React Router Documentation](https://reacttraining.com/react-router/)
+* [Webpack 공식문서](https://webpack.js.org/)
+* [Flux 공식문서](https://facebook.github.io/flux/docs/overview.html)
+* [Redux 공식문서](http://redux.js.org/index.html)
+* [Jest 공식문서](https://facebook.github.io/jest/)
+* [React Router 공식문서](https://reacttraining.com/react-router/)
