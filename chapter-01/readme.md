@@ -34,7 +34,7 @@ $ npm update -g npm
 ```
 
 ##### (옵션) Yarn 설치
-YarnYarn은 npm과 호환되는 패키지 매니저로 페이스북에서 만들었습니다. Yarn을 꼭 써야 할 필요는 없지만, 원한다면 설치하셔도 됩니다:
+[Yarn](https://yarnpkg.com/)은 npm과 호환되는 패키지 매니저로 페이스북에서 만들었습니다. Yarn을 꼭 써야 할 필요는 없지만, 원한다면 설치하셔도 됩니다:
 
 ```
 $ sudo npm install -g yarn
