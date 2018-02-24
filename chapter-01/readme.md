@@ -51,7 +51,7 @@ React Developer Tools 설치하기
 --------------------------------
 아래 주소에서 설치하세요:
 
-* React Developer Tools ([크롬 버전](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=ko) | [파이퍼폭스 버전](https://addons.mozilla.org/ko/firefox/addon/react-devtools/))
+* React Developer Tools ([크롬 버전](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=ko) | [파이어폭스 버전](https://addons.mozilla.org/ko/firefox/addon/react-devtools/))
 
 JSBin 사용해보기
 --------------------------------
