@@ -1,10 +1,10 @@
 챕터 1 : 소개
 ==================
-많은 대규모 웹사이트에서 React를 사용하고 있습니다. 이는 React가 큰 규모에서도 충분히 안정적임을 보여줍니다. React는 준비되었습니다.
+많은 대규모 웹사이트에서 React를 사용하고 있습니다. 이는 React가 대규모 사이트에서도 충분히 안정적임을 보여줍니다. React를 프로덕션에 사용해도 좋습니다.
 
 Node.js 와 NPM 설치하기
 --------------------
-Node와 React는 커맨드 라인을 통해서 사용하게 됩니다. 커맨드라인은 Mac에서는 터미널, PC에서는 커맨드 프롬프트로 불립니다. 아래의 명령어를 실행하여 Node와 NPM의 현재 버전을 확인하세요.
+Node와 React는 명령줄을 통해 사용합니다. 명령줄은 Mac에서는 터미널, PC에서는 커맨드 프럼프트로 불립니다. 아래 명령어를 실행하여 Node와 NPM 현재 버전을 확인하세요.
 
 일단 NodeJS가 설치되어 있는지 확인하세요.
 ```
@@ -34,12 +34,13 @@ $ npm update -g npm
 ```
 
 ##### (옵션) Yarn 설치
-YarnYarn은 Facebook에서 개발된 npm과 호환되는 패키지 매니저입니다. Yarn을 사용하는 것은 필수는 아니지만, 원한다면 선택적으로 설치하셔도 됩니다:
+YarnYarn은 npm과 호환되는 패키지 매니저로 페이스북에서 만들었습니다. Yarn을 꼭 써야 할 필요는 없지만, 원한다면 설치하셔도 됩니다:
+
 ```
 $ sudo npm install -g yarn
 ```
 
-마지막으로, 여러 버전의 Node를 전환하는 좋은 옵션들이 있습니다. 필수는 아니지만 아래 중 하나의 버전 매니저를 설치하셔도 됩니다:
+마지막으로 여러 Node 버전을 전환해 가면서 사용하는 방법이 몇가지 있습니다. 원하신다면 아래 버전 매니저 중 하나를 설치하십시오:
 
 * [Node Version Manager 설치 - Mac 전용 (옵션)](https://github.com/creationix/nvm)
 * [NVM-Windows 설치 - PC 전용 (옵션)](https://github.com/coreybutler/nvm-windows)
@@ -54,13 +55,13 @@ React Developer Tools 설치하기
 
 JSBin 사용해보기
 --------------------------------
-이 저장소는 JSBin에 호스팅된 예제의 주소를 제공합니다. 여러분은 설치, 구축 과정 없이 예제 코드를 바꿔보면서 어떻게 결과가 변경되는 지 확인하실 수 있습니다.
+이 저장소는 JSBin에 호스팅된 예제 주소를 제공합니다. 그 주소를 통해 굳이 노드와 NPM, 리액트를 설치하고 프로젝트를 빌드하지 않아도 예제 코드를 바꿔보면서 어떻게 결과가 변경되는 지 바로바로 확인할 수 있습니다.
 
-아래에는 **gosabo**가 JSBin에 업로드한 Hello World 예제가 있습니다. JSBin에 업로드된 이 예제에는 세 가지 버전이 있습니다.
+아래는 **gosabo**라는 식별자를 사용해 JSBin에 업로드한 Hello World 예제입니다. JSBin에 있는 이 예제에는 세 가지 버전이 있습니다.
 
 참고: 이 저장소에서 링크된 JSBin 예제는 모두 React 15를 사용합니다. 업데이트하려면, script 태그의 CDN 주소를 16으로 변경하세요.
 
-아래의 코드를
+아래 코드를
 
 ```html
   <script src="https://fb.me/react-with-addons-15.1.0.js"></script>
@@ -93,7 +94,7 @@ JSBin 사용해보기
 
 Javascript 라이브러리 CDN
 --------------------------------
-궁극적으로 우리는 webpack과 npm을 사용해서 작업하게 되겠지만, 바로 시작하기 위해서 아래와 같은 CDN 주소가 JSBin에 이런 형식으로 포함될 수 있습니다: `<script src="https://[CDN 주소]"></script>`
+궁극적으로는 webpack과 npm을 사용해서 작업해야 하겠지만, 바로 시작하기 위해서 JSBin에 CDN 주소를 `<script src="https://[CDN 주소]"></script>`과 같은 형식으로 포함시킬 수 있습니다.
 
 * [React](https://unpkg.com/react@16/umd/react.development.js)
 * [React DOM](https://unpkg.com/react-dom@16/umd/react-dom.development.js)
@@ -104,7 +105,7 @@ Javascript 라이브러리 CDN
 
 React 리소스
 --------------------------------
-마지막으로, 우리가 사용하게 될 라이브러리의 공식 문서와 리소스입니다. 모든 내용은 영문으로 제공됩니다:
+마지막으로, 다음은 우리가 사용할 라이브러리의 공식 문서와 리소스입니다. 모든 내용은 영문으로 제공됩니다:
 
 * [React 공식문서](https://facebook.github.io/react/index.html)
 * [React Github](https://github.com/facebook/react)
